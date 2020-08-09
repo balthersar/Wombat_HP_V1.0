@@ -1,0 +1,155 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <link rel="stylesheet" href="/buy_wombat.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    
+    <script src="./contact.js"></script>
+    <title>wombat.design - Kontakt</title>
+    <!-- add icon link -->
+    <link rel = "icon" href ="/images/wombat_logo.png" type = "image/x-icon"> 
+  </head>
+  <body>
+    
+    <!-- navigation bar -->
+    <nav>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+            
+      
+      <div class="navbar-brand" href="#">
+        <a href="./index.html">
+          <img src="/images/wombat_logo.png" alt="wombat_logo">
+        </a>
+        <h1 ><a href="./index.html">wombat.design</a></h1>
+        <h2>bauchtaschen | slow fashion | unisex</h2>
+        <!--<h3>samt | cord | frottee | bio baumwolle</h3> -->
+      </div>
+            
+
+      <div class="dropdown">
+          <ul class="nav-links">
+            <li><a href="./whatswombat.html">Was ist Wombat?</a></li>
+            <li><a href="./kollektion.html">Kollektion</a></li>
+            <li><a href="./buy_wombat.html">Wombat kaufen</a></li>
+          </ul>
+      </div>
+        
+    </nav>
+    <!-- content -->
+    
+    <div class="container-buy-wombat">
+      
+      <div style="text-align:center">
+        <h2>Wombat kaufen</h2>
+        
+      </div>
+      <div class="row">
+        
+        <!-- Rechte/Untere Seite (Bestellformular)-->
+        <div class="column">
+          <p>Wähle deine Lieblingstasche aus und bestelle ganz einfach:</p>
+          <p> </p>
+          <form class="buywombatform" action="https://formspree.io/juergensdj@gmx.de" method="POST">
+            <input type="hidden" name="_cc" value="wombat.design@web.de" />
+            <div class="row_auswahl1">
+              <div class="column_auswahl1">
+                <label for="produkt">Produkt</label>
+                <select id="produkt" name="Produkt">
+                  <!-- value muss gleich angezeigter Text sein!!!!-->
+                  <option value="novalue">Bitte wähle ein Produkt aus..</option>
+                  <option style ="color:red" value="Ahorn (Derzeit nicht verfügbar)">Ahorn (Derzeit nicht verfügbar)</option>
+                  <option value="Anemone">Anemone</option>
+                  <option value="Azalee">Azalee</option>
+                  <option value="Black Panther">Black Panther</option>
+                  <option value="Blätterwald">Blätterwald</option>
+                  <option value="Eibe">Eibe</option>
+                  <option value="Eisrose">Eisrose</option>
+                  <option value="Erle">Erle</option>
+                  <option value="Graue Maus">Graue Maus</option>
+                  <option value="Holdunderbeere">Holunderbeere</option>
+                  <option value="Kirschblüte">Kirschblüte</option>
+                  <option value="Linde">Linde</option>
+                  <option value="Mystic Lynx">Mystic Lynx</option>
+                  <option value="Nordmanntanne">Nordmanntanne</option>
+                  <option value="Orchidee">Orchidee</option>
+                  <option value="Robinie">Robinie</option>
+                  <option value="Schneeglöckchen">Schneeglöckchen</option>
+                  <option value="Schwarzwald">Schwarzwald</option>
+                  <option value="Sonnenblume">Sonnenblume</option>
+                  <option value="Ulme">Ulme</option>
+                  <option value="Wacholder">Wacholder</option>
+                  <option value="Weide">Weide</option>
+                  <option value="Wild Leo">Wild Leo</option>
+                  <option value="Gutschein">Gutschein</option>
+                  
+                </select>
+              </div>
+              <div class="colum_auswahl1">
+                <div class="status_größe" id="status_größe"></div>
+              </div>
+            </div>
+            <label for="fname">Vorname</label>
+            <input type="text" id="fname" name="Vorname" placeholder="Dein Vorname..">
+            <label for="lname">Nachname</label>
+            <input type="text" id="lname" name="Nachname" placeholder="Dein Nachname..">
+            <label for="straße">Straße und Haus-Nr.</label>
+            <input type="text" id="straße" name="Straße" placeholder="Straße">
+            <label for="postleitzahl">Postleitzahl</label>
+            <input type="text" id="postleitzahl" name="Postleitzahl" placeholder="Postleitzahl">
+            <label for="ort">Ort</label>
+            <input type="text" id="ort" name="Ort" placeholder="Ort">
+            <label for="email">E-Mail</label>
+            <input type="text" id="email" name="E-mailadresse" placeholder="Deine E-Mailadresse..">
+            <label for="emailconfirm">E-Mail bestätigen</label>
+            <input type="text" id="emailconfirm" name="E-mailadresse" placeholder="Deine E-Mailadresse bestätigen..">
+            
+            <label for="subject">Nachricht (optional)</label>
+            <textarea id="subject" name="Nachricht" placeholder="Schreib etwas..." style="height:170px">Schreib etwas...</textarea>
+            <div class="status" id="status">
+
+            </div>
+            <button type="submit" value="Abschicken" id="submitbutton"> Jetzt bestellen</button>
+          </form>
+        </div>
+
+        
+      </div>
+    </div>
+    
+    
+
+    <!-- footer -->
+    <div class="footer">
+      <ul class="impressum">
+        <li><a href="./contact.html">Kontakt</a></li>
+        <li><a href="./impressum.html">Impressum</a></li>
+        <li><a href="./datenschutz.html">Datenschutz</a></li>
+        
+     </ul>
+      
+      <div class="social_media">
+        <p>Folge mir auf      &nbsp;  </p>
+        <a href="https://www.instagram.com/wombat.design/?hl=de">
+          <img src="./images/insta_icon.png" alt="wombat_logo">
+        </a>
+      </div>
+    </div>
+
+    <!-- index.js everytime stay at the bottom -->
+    <script src="buy_wombat.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

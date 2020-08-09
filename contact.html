@@ -1,0 +1,112 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <link rel="stylesheet" href="/contact.css" />
+    <link rel="stylesheet" href="/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    
+    <script src="./contact.js"></script>
+    <title>wombat.design - Kontakt</title>
+    <!-- add icon link -->
+    <link rel = "icon" href ="/images/wombat_logo.png" type = "image/x-icon"> 
+  </head>
+  <body>
+    
+    <!-- navigation bar -->
+    <nav>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+            
+      
+      <div class="navbar-brand" href="#">
+        <a href="./index.html">
+          <img src="/images/wombat_logo.png" alt="wombat_logo">
+        </a>
+        <h1 ><a href="./index.html">wombat.design</a></h1>
+        <h2>bauchtaschen | slow fashion | unisex</h2>
+        <!--<h3>samt | cord | frottee | bio baumwolle</h3> -->
+      </div>
+            
+
+      <div class="dropdown">
+          <ul class="nav-links">
+            <li><a href="./whatswombat.html">Was ist Wombat?</a></li>
+            <li><a href="./kollektion.html">Kollektion</a></li>
+            <li><a href="./buy_wombat.html">Wombat kaufen</a></li>
+          </ul>
+      </div>
+        
+    </nav>
+    <!-- content -->
+    
+    <div class="container">
+      
+      <div style="text-align:center">
+        <h2>Kontakt</h2>
+        
+      </div>
+      <div class="row">
+        
+        <div class="column">
+          <p>Hast du Fragen, Sorgen oder Nöte, dann schreib mir einfach:</p>
+          <p> </p>
+          <form action="https://formspree.io/juergensdj@gmx.de" method="POST">
+            <input type="hidden" name="_cc" value="wombat.design@web.de" />
+            <label for="fname">Vorname</label>
+            <input type="text" id="fname" name="Vorname" placeholder="Dein Vorname..">
+            <label for="lname">Nachname</label>
+            <input type="text" id="lname" name="Nachname" placeholder="Dein Nachname..">
+            <label for="lname">E-Mail</label>
+            <input type="text" id="email" name="E-mailadresse" placeholder="Deine E-Mailadresse..">
+            <label for="thema">Thema</label>
+            <select id="thema" name="Thema">
+              <option value="novalue">Bitte wähle ein Thema aus..</option>
+              <option value="Kollektion">Kollektion</option>
+              <option value="Bestellung">Bestellung</option>
+              <option value="Sonstiges">Sonstiges</option>
+            </select>
+            <label for="subject">Nachricht</label>
+            <textarea id="subject" name="Nachricht" placeholder="Schreib etwas..." style="height:170px"></textarea>
+            <div class="status" id="status">
+
+            </div>
+            <button type="submit" value="Abschicken" id="submitbutton"> Abschicken</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    
+
+    <!-- footer -->
+    <div class="footer">
+      <ul class="impressum">
+        <li><a href="./contact.html">Kontakt</a></li>
+        <li><a href="./impressum.html">Impressum</a></li>
+        <li><a href="./datenschutz.html">Datenschutz</a></li>
+        
+     </ul>
+      
+      <div class="social_media">
+        <p>Folge mir auf      &nbsp;  </p>
+        <a href="https://www.instagram.com/wombat.design/?hl=de">
+          <img src="./images/insta_icon.png" alt="wombat_logo">
+        </a>
+      </div>
+    </div>
+
+    <!-- index.js everytime stay at the bottom -->
+    <script src="index.js"></script>
+  </body>
+</html>

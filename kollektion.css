@@ -1,0 +1,144 @@
+
+  
+  
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+    
+  }
+  
+  .container-kollektion{
+    margin: 10px;
+    border-radius: 10px;
+    /*background-color:rgba(255, 255, 255, 0.65);*/
+    background-color:rgba(0, 0, 0, 0.65);
+    padding: 10px;
+    position: relative;
+    z-index: -99;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translateZ(-99px); 
+    
+    
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+    
+  }
+
+  
+  .pictures{
+    display: flex;
+    overflow: hidden;
+
+  }
+  .carousel-container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    
+  }
+  .carousel-slide{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+  }
+  .carousel-slide img{
+    height: 100%;
+    width: 100%;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translateZ(3px);
+    
+    
+    
+  }
+  
+  .fa-angle-right{
+    color: black;
+    position: relative;
+    float: right;
+    right: 0px;
+    z-index: 3;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translateZ(3px);
+    
+  }
+  .fa-angle-left{
+    color: black;
+    position: relative;
+    float: left;
+    right: 0px;
+    z-index: 3;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translateZ(3px);
+    
+  }
+
+  .stars-outer {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    font-family: FontAwesome;
+    
+  }
+   
+  .stars-outer::before {
+    content: "\f006 \f006 \f006 \f006 \f006";
+  }
+   
+  .stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+  }
+   
+  .stars-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    color: #f8ce0b;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
